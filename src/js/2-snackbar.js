@@ -1,6 +1,8 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import successIcon from '../img/icons/svg-ok.svg';
+import errorIcon from '../img/icons/svg-icons.svg';
 /*
   Форма → слухаємо submit
 ====================================*/
@@ -40,7 +42,7 @@ function handleSuccess(delay) {
   iziToast.success({
     message: `ОК Fulfilled promise in ${delay}ms`,
     backgroundColor: '#59a10d',
-    iconUrl: '../img/icons/svg-ok.svg',
+    iconUrl: successIcon,
     messageColor: '#fff',
     position: 'topRight',
   });
@@ -50,7 +52,7 @@ function handleError(delay) {
   iziToast.error({
     message: `Error Rejected promise in ${delay}ms`,
     backgroundColor: '#ef4040',
-    iconUrl: '../img/icons/svg-icons.svg',
+    iconUrl: errorIcon,
     messageColor: '#fff',
     position: 'topRight',
   });

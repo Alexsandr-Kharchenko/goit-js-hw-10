@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Notifier</title>
+    <link rel="stylesheet" href="./css/2‑snackbar.css" />
+    <link rel="stylesheet" href="./css/back-link.css" />
+  </head>
+  <body>
+    <section class="section">
+      <a class="back-link" href="./index.html">Go back</a>
+      <h1 class="title">Promise Notifier</h1>
+
+      <form class="form">
+        <label class="label">
+          Delay (ms)
+          <input
+            type="number"
+            name="delay"
+            min="0"
+            required
+            placeholder="e.g. 1000"
+          />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+
+          <label class="radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </section>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>

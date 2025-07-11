@@ -4,7 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import errorIcon from '../img/icons/svg icons.svg';
+import errorIcon from '../img/icons/svg-icons.svg';
 
 const refs = {
   input: document.querySelector('#datetime-picker'),

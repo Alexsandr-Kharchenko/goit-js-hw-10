@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+
 /*
   Форма → слухаємо submit
 ====================================*/
@@ -12,7 +13,7 @@ function onFormSubmit(evt) {
 
   // зчитуємо значення
   const delay = Number(form.elements.delay.value);
-  const state = form.elements.state.value; // 'fulfilled' або 'rejected'
+  const state = form.elements.state.value;
 
   // створюємо проміс
   createPromise(delay, state).then(handleSuccess).catch(handleError);
@@ -39,7 +40,7 @@ function handleSuccess(delay) {
   iziToast.success({
     message: `ОК Fulfilled promise in ${delay}ms`,
     backgroundColor: '#59a10d',
-    iconUrl: './img/icons/svg ok.svg',
+    iconUrl: '../img/icons/svg ok.svg',
     messageColor: '#fff',
     position: 'topRight',
   });
@@ -49,7 +50,7 @@ function handleError(delay) {
   iziToast.error({
     message: `Error Rejected promise in ${delay}ms`,
     backgroundColor: '#ef4040',
-    iconUrl: './img/icons/svg icons.svg',
+    iconUrl: '../img/icons/svg icons.svg',
     messageColor: '#fff',
     position: 'topRight',
   });
